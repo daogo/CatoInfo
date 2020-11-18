@@ -1,0 +1,46 @@
+PODS:
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SCLAlertView (0.8.1)
+  - SVProgressHUD (2.2.6)
+
+DEPENDENCIES:
+  - RxCocoa
+  - RxSwift
+  - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
+  - SVProgressHUD (from `https://github.com/slizeray/SVProgressHUD.git`)
+
+SPEC REPOS:
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  SCLAlertView:
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+  SVProgressHUD:
+    :git: https://github.com/slizeray/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SCLAlertView:
+    :commit: f08ec93c299a221210e59462c84c79410050e5b7
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+  SVProgressHUD:
+    :commit: aabac68e1b18d489e92ca52ec708334f248edad2
+    :git: https://github.com/slizeray/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SCLAlertView: 776813fb1f62248965f37cb7edf4088ee6394460
+  SVProgressHUD: 6ed134667e9ebb2f33679e8273cd48fd3fa349e5
+
+PODFILE CHECKSUM: 62eca9b82a82f00c0b1e4c9ccadc280efcfb5c02
+
+COCOAPODS: 1.9.1

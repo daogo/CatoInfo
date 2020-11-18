@@ -1,0 +1,45 @@
+
+ o__         __o        ,__o        __o           __o
+ ,>/_       -\<,      _-\_<,       _`\<,_       _ \<_
+(*)`(*).....O/ O.....(*)/'(*).....(*)/ (*).....(_)/(_)
+ 
+ 
+ https://docs.thecatapi.com/api-reference/breeds/breeds-list
+ 
+ APIClient - klient abstrakcyjny
+ Protokuł posiadający jedną publiczą metode :
+ func fetch<T: Decodable>(with request: URLRequest, decode: @escaping (Decodable) -> T?) -> Observable<T>
+
+ Zwraca nam ona pobrany obiekt, poprzez wywołanie w swoim ciele metody służacej do pobrania danych, ich walidacji, oraz zmapowania(zdecodowania).
+
+ APIError
+ Enum z customowymi errorami.
+ 
+ Endpoint - endpoint abstrakcyjny
+ Posiada podstawowe pola danych dotyczące requesta
+ 
+ 
+ 
+USAGE
+Jezeli chcemy sami zaimpemetować jakis serwis musimy stworzyc dwie klasy
+ 
+ 1. MyCustomApiClient : ApiClient, najlepiej analogicznie do CatApiService
+ 2. MyCustomEndpoit : Endpoint, analogicznie do CatEndpoint
+ 
+
+ViewModel
+Posiada pozostale modele cellsViewModels, pole loadingInProcess, i pole showError
+Posiada swoj MyCustomApiClient oraz 2 metody, prywatna wywołująca odpowiednie pobieranie z naszego apiClienta zwracajaca Observable<Typ cellsViewModels>, oraz publiczną getData() ktora zawiera wywołania tej prywatnej wraz z subskrybcją. W tej subskrybcji nastepuje powiązanie odpowiednich pol viewModelu z eventami()
+
+cellsViewModels - z onNext
+loadingInProcess - z onNext oraz przed requestem
+showError - z onError
+
+(Zostało to tak wykonane ponieważ ViewController nie zawiera zadnej logiki, ktora była by niezbedna w przypadku użycia metody subscirbe. Nie mozna bindować metod ktore mogą zwrocić errory)
+
+
+ViewController
+posiada ViewModel
+Binduje dane(bind to: self.viewModel.cellsViewModels) i wywołuje metode getData()
+
+ 
