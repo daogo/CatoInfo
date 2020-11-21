@@ -44,10 +44,10 @@ class TraitsStarView: UIView {
             star.titleLabel?.font = UIFont.systemFont(ofSize: 30)
             star.tag = i
             
-            let image = UIImage(named: "star")?.withTintColor(.black)
+            let image = UIImage(named: "star")?.withTintColor(Colors.mainTextColor)
             star.setImage(image, for: .normal)
             if i <= rating {
-                let solidImage = UIImage(named: "star-filled")?.withTintColor(.black)
+                let solidImage = UIImage(named: "star-filled")?.withTintColor(Colors.mainTextColor)
                 star.setImage(solidImage, for: .normal)
             }
             starsStackView.addArrangedSubview(star)

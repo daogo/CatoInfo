@@ -28,15 +28,16 @@ class TraitsCheckbox: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        contentView.backgroundColor = Colors.backgroundColor
     }
     
     func prepareWith(text: String, value: Bool) {
         self.titleLabel.text = text
         
         if value {
-            self.imageView.image = UIImage(named: "tick")?.withTintColor(.black)
+            self.imageView.image = UIImage(named: "tick")?.withTintColor(Colors.mainTextColor)
         } else {
-            self.imageView.image = UIImage(named: "cross")?.withTintColor(.black)
+            self.imageView.image = UIImage(named: "cross")?.withTintColor(Colors.mainTextColor)
         }
         
     }

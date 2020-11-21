@@ -50,7 +50,7 @@ class BreedListViewController: UIViewController {
     private func setupUI() {
         navigationItem.title = viewModel?.title ?? ""
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.tintColor = Colors.mainTextColor
         
         tableView.register(UINib(nibName: "CatBreedTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: CatBreedTableViewCell.self))
         tableView.estimatedRowHeight = 120

@@ -29,6 +29,7 @@
 		E7C07A962555FEA80065F154 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C07A952555FEA80065F154 /* UIImageViewExtension.swift */; };
 		E7C8008D25543F92003D91D8 /* CatBreedTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8008C25543F92003D91D8 /* CatBreedTableViewCellViewModel.swift */; };
 		E7C8009525548B19003D91D8 /* BreedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8009425548B19003D91D8 /* BreedDetailsViewModel.swift */; };
+		E7C9AB862568E92E0088FD57 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9AB852568E92E0088FD57 /* Colors.swift */; };
 		E7D5495A25555E1900D2C477 /* TraitsStarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D5495925555E1900D2C477 /* TraitsStarView.xib */; };
 		E7D5495F25555E4E00D2C477 /* TraitsStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5495E25555E4E00D2C477 /* TraitsStarView.swift */; };
 		E7DCC5572548B25C006A8AB3 /* CatBreedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCC5552548B25C006A8AB3 /* CatBreedTableViewCell.swift */; };
@@ -92,6 +93,7 @@
 		E7C07A952555FEA80065F154 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		E7C8008C25543F92003D91D8 /* CatBreedTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		E7C8009425548B19003D91D8 /* BreedDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewModel.swift; sourceTree = "<group>"; };
+		E7C9AB852568E92E0088FD57 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E7D5495925555E1900D2C477 /* TraitsStarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraitsStarView.xib; sourceTree = "<group>"; };
 		E7D5495E25555E4E00D2C477 /* TraitsStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsStarView.swift; sourceTree = "<group>"; };
 		E7DCC5552548B25C006A8AB3 /* CatBreedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedTableViewCell.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				E70B54EF25458D08003126B9 /* Stories */,
 				E7DD97CC253F09A000E977B1 /* Info.plist */,
 				E772618C2550AD4D00E02DF2 /* Resources */,
+				E7C9AB852568E92E0088FD57 /* Colors.swift */,
 			);
 			path = CatoInfo;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				E7D5495F25555E4E00D2C477 /* TraitsStarView.swift in Sources */,
 				E7F102E22557D93900C4DDAF /* UILabel + Extension.swift in Sources */,
 				E77E86922540C53100EABB97 /* BreedListViewModel.swift in Sources */,
+				E7C9AB862568E92E0088FD57 /* Colors.swift in Sources */,
 				E7C8009525548B19003D91D8 /* BreedDetailsViewModel.swift in Sources */,
 				E7DD97C1253F099D00E977B1 /* SceneDelegate.swift in Sources */,
 				E76347DB2553E2AF007717FC /* BreedDetailsViewController.swift in Sources */,

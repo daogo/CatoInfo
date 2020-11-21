@@ -18,7 +18,13 @@ class CatBreedTableViewCell: UITableViewCell {
         
     }
     
-    @IBOutlet weak var catImageView: UIImageView!
+    @IBOutlet weak var catImageView: UIImageView! {
+        didSet {
+            let image = UIImage(named: "cat")?.withTintColor(Colors.mainTextColor)
+            catImageView.image = image
+        }
+    }
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     

@@ -59,6 +59,11 @@ class BreedDetailsViewController: UIViewController, UIScrollViewDelegate {
         self.detailsStackView.addArrangedSubview(viewModel.getTraitsCheckboxes())
         self.detailsStackView.addArrangedSubview(viewModel.getTraitsStarsViews())
         
+        let image = UIImage(named: "cat")?.withTintColor(Colors.mainTextColor)
+        self.catPlaceHolderImage.image = image
+        
+        self.pageControl.currentPageIndicatorTintColor = Colors.mainTextColor
+        
         let newFolder = UIAction(title: "New Folder", image: UIImage(systemName: "folder.badge.plus")) { _ in print("NewFolder")}
         let edit = UIAction(title: "Edit", image: UIImage(systemName: "pencil.circle")) { _ in print("Edit") }
         let menu = UIMenu(title: "", children: [newFolder, edit])
@@ -91,7 +96,7 @@ class BreedDetailsViewController: UIViewController, UIScrollViewDelegate {
             let imageView = UIImageView()
             imageView.frame = CGRect(x: catImagesScrollView.frame.width * CGFloat(i), y: 0, width: catImagesScrollView.frame.width, height: catImagesScrollView.frame.height)
             imageView.contentMode = .scaleAspectFit
-            imageView.imageFromURL(urlString: imagesUrl[i], placeholderImage: UIImage(named: "cat"))
+            imageView.imageFromURL(urlString: imagesUrl[i], placeholderImage: UIImage(named: "cat")?.withTintColor(Colors.mainTextColor))
             catImagesScrollView.addSubview(imageView)
         }
     }
